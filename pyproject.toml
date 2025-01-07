@@ -18,7 +18,6 @@ dependencies = [
 
 [tool.uv]
 dev-dependencies = [
-    "mkdocs-material>=9.5.49",
     "pre-commit>=4.0.1",
     "pyright>=1.1.391",
     "pytest-cov>=6.0.0",
