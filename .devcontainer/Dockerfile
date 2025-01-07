@@ -16,8 +16,6 @@ RUN echo 'Acquire::http::Pipeline-Depth 0;' >> /etc/apt/apt.conf.d/99fixbadproxy
 # hadolint ignore=DL3008
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-    # For OpenCV etc...
-    libgl1 libglib2.0-0 \
     # To remove the image size, it is recommended refresh the package cache as follows
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
